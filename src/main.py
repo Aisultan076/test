@@ -22,7 +22,7 @@ def main(page: ft.Page):
                 ft.Text(name, width=150),
                 ft.Text(phone, width=120),
                 ft.Text(note, width=150),
-                ft.IconButton(icon=ft.icons.DELETE, on_click=lambda e, id=contact_id: delete_contact(id)),
+                ft.IconButton(icon=ft.Icons.DELETE, on_click=lambda e, id=contact_id: delete_contact(id)),
             ])
             contact_table.controls.append(row)
         page.update()
